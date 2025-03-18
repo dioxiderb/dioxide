@@ -1,5 +1,5 @@
 script_key=""
-shared.Global = {
+getgenv().Dioxide = {
     ['Silent'] = {
         ['Enabled'] = true,
         ['Safety'] = true,
@@ -138,10 +138,9 @@ shared.Global = {
     ['Keys'] = {
         ['Target'] = "C",  
         ['Cancel'] = "Z",   
-        ['Trigger'] = 'V',
+        ['Trigger'] = 'E',
         ['Macro'] = 'X',
     },
 }
-
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/33b8f4a16bf385c14c814d10d34d1d3c.lua"))()
