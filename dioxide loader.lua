@@ -1,10 +1,14 @@
-script_key=""
+script_key="";
 getgenv().Dioxide = {
+    ['Settings'] = {
+        ['Version'] = 'v1.2', 
+        ["AutoLowGfx"] = false,
+    },
     ['Silent'] = {
         ['Enabled'] = true,
         ['Safety'] = true,
         ['Mode'] = 'Target',
-        ['Auto'] = true,
+        ['Auto'] = false,
         ['Prediction'] = {  
             ['X'] = 0,  
             ['Y'] = 0,  
@@ -19,7 +23,7 @@ getgenv().Dioxide = {
         ['FOV'] = 240,
 
         ['Configurations'] = {
-            ['Value'] = 0.006,
+            ['Value'] = 0.001,
             ['ThirdPerson'] = false,
             ['FirstPerson'] = true, 
         },
@@ -50,11 +54,11 @@ getgenv().Dioxide = {
     },
 
     ['Hits'] = {
-        ['power'] = '0.86',
+        ['power'] = '1',
     },
 
     ['Hitbox'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Guns'] = {
             ['[Double-Barrel SG]'] = { H = 0.6, W = 0.6 },
             ['[Revolver]'] = { H = 0.6, W = 0.6 },
@@ -71,7 +75,7 @@ getgenv().Dioxide = {
             ['Mode'] = 'ClosestPart', 
         },
         ['Start'] = 0.001, 
-        ['End'] = 0.002, 
+        ['End'] = 0.001, 
         ['Mode'] = "hold",  
     },
 
@@ -90,13 +94,13 @@ getgenv().Dioxide = {
     },
     
     ['Spread modifications'] = { 
-        ['Mode'] = "Randomizer", -- "Normal" // "Randomizer"
+        ['Mode'] = "Normal", -- "Normal" // "Randomizer"
         ['Spread Modifier'] = {
             Multiplier = 0.1
         },
         ['Spread Randomizer'] = {
-            Start = 0.2,
-            End = 0.4
+            Start = 0.01,
+            End = 0.6
         },
         ['Enabled'] = true,
         ['Toggle Key'] = "G"
