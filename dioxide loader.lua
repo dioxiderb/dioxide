@@ -1,9 +1,5 @@
 script_key="";
 getgenv().Dioxide = {
-    ['Settings'] = {
-        ['Version'] = 'v1.2', 
-        ["AutoLowGfx"] = false,
-    },
     ['Silent'] = {
         ['Enabled'] = true,
         ['Safety'] = true,
