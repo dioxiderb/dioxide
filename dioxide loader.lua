@@ -1,10 +1,14 @@
 script_key="";
 getgenv().Dioxide = {
+    ['Settings'] = {
+        ['Version'] = 'v1.2', 
+        ["AutoLowGfx"] = true,
+    },
     ['Silent'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Safety'] = true,
         ['Mode'] = 'Target',
-        ['Auto'] = false,
+        ['Auto'] = true,
         ['Prediction'] = {  
             ['X'] = 0,  
             ['Y'] = 0,  
@@ -138,7 +142,7 @@ getgenv().Dioxide = {
     ['Keys'] = {
         ['Target'] = "C",  
         ['Cancel'] = "Z",   
-        ['Trigger'] = 'E',
+        ['Trigger'] = 'V',
         ['Macro'] = 'X',
     },
 }
