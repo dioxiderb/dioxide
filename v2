@@ -69,7 +69,8 @@ getgenv().Dioxide = {
             },
 
             ['Checks'] = {
-                ['KO'] = true
+                ['KO'] = true,
+                ['WallCheck'] = true
             }
         },
     },
