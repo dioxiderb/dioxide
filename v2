@@ -73,6 +73,10 @@ getgenv().Dioxide = {
                 ['WallCheck'] = true
             }
         },
+        ["RaidAwareness"] = {
+            ['Enabled'] = true,
+            ['Keybind'] = 'V',
+        },
     },
 }
 
