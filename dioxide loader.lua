@@ -1,7 +1,7 @@
 script_key="";
 getgenv().Dioxide = {
     ['Settings'] = {
-        ['Version'] = 'v1.2', 
+        ['Version'] = 'v1.3', 
         ["AutoLowGfx"] = true,
     },
     ['Silent'] = {
@@ -145,6 +145,12 @@ getgenv().Dioxide = {
         ['Trigger'] = 'V',
         ['Macro'] = 'X',
     },
+
+    ['RaidAwareness'] = {
+        ['Enabled'] = true,
+        ['Keybind'] = 'Q',
+    },
+
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/96306ba90196961c8ea17c903871a339.lua"))()
