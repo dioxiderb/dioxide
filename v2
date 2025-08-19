@@ -1,14 +1,17 @@
 
-script_key="";
+script_key = ''
 getgenv().Dioxide = {
-    ["Start"] = {
-        ["IntroBlur"] = { ['Active'] = true },
-        ["Silent"] = {
+    ['Start'] = {
+        ['IntroBlur'] = { ['Active'] = true },
+        ['Silent'] = {
             ['Type'] = 'Fov', -- Fov, Target
             ['ClosestPart'] = true,
-            ['TargetParts'] = 'UpperTorso',
+            ['TargetParts'] = 'HumanoidRootPart',
             ['Air'] = 'UpperTorso',
             ['Prediction'] = 0.1134222222,
+            ['Keybind'] = 'T', -- Silent aim toggle keybind
+            ['Active'] = true, -- Silent aim active state
+            ['Notification'] = true, -- Show notifications when toggling
             ['Fov'] = {
                 ['Transparency'] = 1,
                 ['Visible'] = false,
@@ -17,16 +20,20 @@ getgenv().Dioxide = {
                 ['Radius'] = 200,
             },
         },
-        ["TriggerBot"] = {
-            ['Mode'] = "Hold", -- Options: "Toggle" or "Hold"
+        ['TriggerBot'] = {
+            ['Mode'] = 'Hold', -- Options: "Toggle" or "Hold"
             ['Notification'] = false,
             ['Delay'] = 0.01,
-            ['Blacklisted'] = { "Katana" },
+            ['Blacklisted'] = { 'Katana' },
             ['Keybind'] = 'E',
         },
-        ["SilentOffsets"] = { ['Jump'] = -0.15, ['Fall'] = 0 },
-        ["AimbotOffsets"] = { ['Active'] = true, ['Jump'] = -0.19, ['Fall'] = 0 },
-        ["AimBot"] = {
+        ['SilentOffsets'] = { ['Jump'] = -0.15, ['Fall'] = 0 },
+        ['AimbotOffsets'] = {
+            ['Active'] = true,
+            ['Jump'] = -0.19,
+            ['Fall'] = 0,
+        },
+        ['AimBot'] = {
             ['ClosestPart'] = true,
             ['Notification'] = false,
             ['Keybind'] = 'C',
@@ -35,16 +42,16 @@ getgenv().Dioxide = {
             ['Smoothness'] = 0.045,
             ['TargetParts'] = 'Head',
         },
-        ["Style"] = {
+        ['Style'] = {
             ['Easing'] = 'Elastic', -- Linear, Sine, Quad, Cubic, Exponential, Back, Bounce, Elastic
             ['Direction'] = 'InOut', -- In, Out, InOut
         },
-        ["MouseTp"] = {
+        ['MouseTp'] = {
             ['Active'] = false,
             ['LerpValues'] = 1,
             ['MousePredictions'] = 0.1,
         },
-        ["Misc"] = {
+        ['Misc'] = {
             ['Resolver'] = {
                 ['Keybind'] = 'G',
                 ['Active'] = false,
@@ -70,10 +77,10 @@ getgenv().Dioxide = {
 
             ['Checks'] = {
                 ['KO'] = true,
-                ['WallCheck'] = true
-            }
+                ['WallCheck'] = true,
+            },
         },
-        ["RaidAwareness"] = {
+        ['RaidAwareness'] = {
             ['Enabled'] = true,
             ['Keybind'] = 'V',
         },
