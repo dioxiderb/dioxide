@@ -139,4 +139,4 @@ getgenv().Dioxide = {
 }
 
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9fae820c4775c6fb52b118ee749f7b92.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dcc77ecb11e6fde10158d563e2d0a67b.lua"))()
