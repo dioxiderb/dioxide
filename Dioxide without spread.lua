@@ -5,14 +5,13 @@ getgenv().Dioxide = {
         ["AutoLowGfx"] = true,
     },
     ['Silent'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Safety'] = true,
-        ['Mode'] = 'Target',
-        ['Auto'] = true,
+        ['Mode'] = 'auto',  -- 'auto' or 'Target'
         ['Prediction'] = {  
-            ['X'] = 0,  
-            ['Y'] = 0,  
-            ['Z'] = 0 
+            ['X'] = 0.1308833,  
+            ['Y'] = 0.1308833,  
+            ['Z'] = 0.1308833 
         }
     },
 
@@ -21,6 +20,7 @@ getgenv().Dioxide = {
         ['Distance'] = 450,
         ['MouseButton2'] = true,
         ['FOV'] = 240,
+        ['Mode'] = 'auto', -- 'auto' or 'Target'
 
         ['Configurations'] = {
             ['Value'] = 0.001,
@@ -53,9 +53,6 @@ getgenv().Dioxide = {
         ['AUG'] = {4, 3.2, 2.1},
     },
 
-    ['Hits'] = {
-        ['power'] = '1',
-    },
 
     ['Hitbox'] = {
         ['Enabled'] = false,
